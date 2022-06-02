@@ -2,32 +2,61 @@
 <html>
  <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huhu</title>
+ <style>
+ #tombol {
+  opacity: 0.2;
+  margin-top: 160%;
+  margin-left: 70%;
+ }
+ .hidden {
+  display: none;
+ }
+ </style>
+  <title></title>
   
  </head>
 <body>
- <h3 style="opacity:0.03; margin:auto; padding-bottom:10">Kata sandinya nama kamu</h3>
+ <h3 style="opacity:0.03; margin:auto; padding-bottom:10">password is your name</h3>
 
 <input type="password" id="myText" placeholder="masukkan kata sandi" value="">
-<button onclick="myFunction()">Masuk</button>
-
+<button onclick="myFunction()">Login</button>
+<br />
+<br />
+<br />
+<a href="https://drive.google.com/drive/folders/1vRoDP-1mCQI4m4_wIgZNXFnBlMHkYbHd"><button id="tombol" class="hidden"  type="submit">Buka</button></a>
 <script>
 function myFunction() {
   var x = document.getElementById("myText").value;
   var pass = "mutya";
   
-  if(x === pass) {
-   alert('Hai');
- alert('ketemu lagi');
- alert('jadi nostalgia dulu ya');
- alert('kirim kode pake kaya ginian');
- alert('btw, udah punya cowo ga ni, sabi kali kalo...');
- 
-  } else {
+  
+  if(x === pass){
+ alert('Hai');
+ alert('ketemu lagi, hehe');
+ alert('gajelas banget ya aku');
+ alert('emang sifat manusia itu aneh');
+ alert('suka berubah setiap saat');
+ alert('contohnya aku');
+ alert('pengin kirim sesuatu buat kamu');
+ alert('coba dibuka yaa');
+ alert('*kalo tombol bukanya ga ada berarti tanggal lahir kamu salah:), coba cek formatnya');
+ alert('*kalo udah bener tombolnya ada di kanan bawah');
+  }
+  else {
    alert('password salah')
   }
-}
+ }
+ var pass2 = "260805";
+  var a = prompt('Your date born');
+  var text = document.querySelector('#tombol'); 
+  if(a === pass2) {
+  text.classList.remove('hidden')
+  }
+   else {
+   alert('wrong date!')
+  }
+
+
 </script>
 
 </body>
